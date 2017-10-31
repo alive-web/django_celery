@@ -1,3 +1,10 @@
 from django.test import TestCase
+from utils import my_func
 
-# Create your tests here.
+
+class UtilsTests(TestCase):
+
+    def test_my_func(self):
+
+        self.assertEqual(my_func(), 'test')
+
